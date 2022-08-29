@@ -10,11 +10,13 @@ using Newtonsoft.Json;
 
 namespace Azure.FunctionApp
 {
+    [Disable("HttpTriggeredAzureFuncApp_ISDISABLED")]
     public static class HttpTriggeredAzureFuncApp
     {
         [FunctionName("HttpTriggeredAzureFuncApp")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
+            [Queue("outqueue", Connection = "azFuncQueueStorage")] ICollector<string> outputQueueItem,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
@@ -28,7 +30,7 @@ namespace Azure.FunctionApp
             string responseMessage = string.IsNullOrEmpty(name)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
                 : $"Hello, {name}. This HTTP triggered function executed successfully.";
-
+            outputQueueItem.Add(name);
             return new OkObjectResult(responseMessage);
         }
     }
