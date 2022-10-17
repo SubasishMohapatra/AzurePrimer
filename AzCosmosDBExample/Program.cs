@@ -6,10 +6,10 @@ namespace AzCosmosDBExample
     public class Program
     {
         // Replace <documentEndpoint> with the information created earlier
-        private static readonly string EndpointUri = "https://dipsycosmosdbacct-westus.documents.azure.com:443/";
+        private static readonly string EndpointUri = "deletedEndPoint";
 
         // Set variable to the Primary Key from earlier.
-        private static readonly string PrimaryKey = "oMMv08LlvNyq7winJND7YoXOaJi4pfDZirWi79p8EiFxJ78X2xNUvknw3SCSlJYxK7KTW1Koc5L2s2RME0Ga7Q==";
+        private static readonly string PrimaryKey = "deletedKey";
 
         // The Cosmos client instance
         private CosmosClient cosmosClient;

@@ -8,8 +8,7 @@ public class BlobStorageExample
         try
         {
             // Copy the connection string from the portal in the variable below.
-            //string storageConnectionString = "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;QueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;TableEndpoint=http://127.0.0.1:10002/devstoreaccount1;";
-            string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=storageazblob;AccountKey=Fvr4AWlBtoylzOrH+BbLBJaw5BduqETL3w2sHyHUDY9BhK56sizgHyLxajd7pFaEYQfNrrObOwxZ+AStY+8FVQ==;EndpointSuffix=core.windows.net";
+            string storageConnectionString = "Deleted connection string";
 
             // Create a client that can authenticate with a connection string
             BlobServiceClient blobServiceClient = new BlobServiceClient(storageConnectionString);
