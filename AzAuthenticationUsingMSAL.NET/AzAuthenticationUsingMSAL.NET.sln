@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzAuthenticationUsingMSAL.NET", "AzAuthenticationUsingMSAL.NET.csproj", "{66F55720-2025-44C6-BA41-3EAA481DBD5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66F55720-2025-44C6-BA41-3EAA481DBD5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F55720-2025-44C6-BA41-3EAA481DBD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F55720-2025-44C6-BA41-3EAA481DBD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F55720-2025-44C6-BA41-3EAA481DBD5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4B724D2-C255-410C-88E1-1DC4B9147DF3}
+	EndGlobalSection
+EndGlobal
